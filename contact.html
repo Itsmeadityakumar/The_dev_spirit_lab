@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — the_dev_spirit_lab</title>
+    <meta name="description" content="Get in touch with the_dev_spirit_lab." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="dark">
+    <header>
+      <nav>
+        <a class="brand" href="index.html">
+          <img src="" class="brand-logo" />
+          The_dev_spirit_lab
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="stack.html">Stack</a>
+          <a href="topics.html">Topics</a>
+          <a href="posts.html">Posts</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="nav-right">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark and light mode"
+          >
+            <i class="ti ti-moon" id="themeIcon"></i>
+          </button>
+          <a
+            class="btn btn-primary"
+            href="https://instagram.com/the_dev_spirit_lab"
+            target="_blank"
+            rel="noopener"
+            ><i class="ti ti-brand-instagram"></i> Follow</a
+          >
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="ti ti-menu-2" id="menuIcon"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="stack.html">Stack</a>
+        <a href="topics.html">Topics</a>
+        <a href="posts.html">Posts</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top: 64px">
+      <div class="section-inner">
+        <p class="label">Contact</p>
+        <div class="contact-card">
+          <p>
+            Got a topic you want covered, or want to collaborate? Reach out.
+          </p>
+
+          <!-- Modified Form Section -->
+          <form id="contactForm">
+            <input
+              class="field"
+              type="text"
+              id="name"
+              placeholder="Your name"
+              aria-label="Your name"
+              required
+            />
+            <input
+              class="field"
+              type="email"
+              id="email"
+              placeholder="Your email"
+              aria-label="Your email"
+              required
+            />
+            <textarea
+              class="field"
+              id="message"
+              placeholder="Your message"
+              aria-label="Your message"
+              required
+            ></textarea>
+            <button class="btn btn-primary" type="submit" id="submitBtn">
+              Send message
+            </button>
+            <p
+              id="formFeedback"
+              style="display: none; margin-top: 12px; font-size: 13.5px"
+            ></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="f-brand">
+            <div class="brand">
+              <img src="" class="brand-logo" />
+              The_dev_spirit_lab
+            </div>
+            <p>
+              Backend dev content on Java, Spring Boot, REST APIs and SQL —
+              visual breakdowns to help you learn and grow.
+            </p>
+          </div>
+          <div>
+            <h4>EXPLORE</h4>
+            <div class="footer-links">
+              <a href="about.html">About</a>
+              <a href="stack.html">Tech stack</a>
+              <a href="topics.html">Topics</a>
+              <a href="posts.html">Latest posts</a>
+            </div>
+          </div>
+          <div>
+            <h4>TOPICS</h4>
+            <div class="footer-links">
+              <a href="topics.html">Java & OOP</a>
+              <a href="topics.html">Backend & APIs</a>
+              <a href="topics.html">Databases & SQL</a>
+              <a href="topics.html">Career & growth</a>
+            </div>
+          </div>
+          <div>
+            <h4>STAY UPDATED</h4>
+            <p
+              style="
+                font-size: 12.5px;
+                color: var(--text-secondary);
+                margin: 0 0 10px;
+              "
+            >
+              Get new posts and dev tips in your inbox.
+            </p>
+            <form id="newsletterForm" class="newsletter">
+              <input
+                type="email"
+                id="newsEmail"
+                placeholder="you@email.com"
+                required
+              />
+              <button class="btn btn-primary" type="submit" id="newsBtn">
+                Join
+              </button>
+            </form>
+            <p
+              id="newsFeedback"
+              style="display: none; font-size: 12.5px; margin-top: 8px"
+            ></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 the_dev_spirit_lab. All rights reserved.</span>
+          <div class="socials">
+            <a
+              href="https://instagram.com/the_dev_spirit_lab"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+              ><i class="ti ti-brand-instagram"></i
+            ></a>
+            <a href="#" aria-label="GitHub"
+              ><i class="ti ti-brand-github"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="ti ti-brand-linkedin"></i
+            ></a>
+            <a href="#" aria-label="Email"><i class="ti ti-mail"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Added API Request Handler -->
+    <script>
+      const contactForm = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const formFeedback = document.getElementById("formFeedback");
+
+      contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        const payload = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        };
+
+        try {
+          const response = await fetch("http://localhost:9999/api/contact", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            formFeedback.textContent = `Thanks ${data.name}! Your message has been sent.`;
+            formFeedback.style.color = "var(--spring)";
+            formFeedback.style.display = "block";
+            contactForm.reset();
+          } else {
+            throw new Error("Server returned an error");
+          }
+        } catch (error) {
+          formFeedback.textContent =
+            "Could not send message. Ensure your Spring Boot backend is running.";
+          formFeedback.style.color = "#ef4444";
+          formFeedback.style.display = "block";
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send message";
+        }
+      });
+    </script>
+    <script>
+      const newsForm = document.getElementById("newsletterForm");
+      const newsBtn = document.getElementById("newsBtn");
+      const newsEmail = document.getElementById("newsEmail");
+      const newsFeedback = document.getElementById("newsFeedback");
+
+      newsForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        newsBtn.disabled = true;
+        newsBtn.textContent = "Joining...";
+
+        try {
+          const response = await fetch(
+            "http://localhost:9999/api/newsletter/subscribe",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: newsEmail.value }),
+            },
+          );
+
+          if (response.ok) {
+            const data = await response.json();
+            newsFeedback.textContent = `Subscribed successfully! Welcome ${data.email}`;
+            newsFeedback.style.color = "var(--spring)";
+            newsFeedback.style.display = "block";
+            newsForm.reset();
+          } else {
+            throw new Error("Already subscribed or invalid email");
+          }
+        } catch (err) {
+          newsFeedback.textContent =
+            "Could not subscribe. Email already exists or server is down.";
+          newsFeedback.style.color = "#ef4444";
+          newsFeedback.style.display = "block";
+        } finally {
+          newsBtn.disabled = false;
+          newsBtn.textContent = "Join";
+        }
+      });
+    </script>
+  </body>
+</html>
